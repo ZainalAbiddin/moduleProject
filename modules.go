@@ -25,7 +25,7 @@ func Ekstrakulikuler(kegiatan [4]string) {
 }
 
 // fungsi return value
-func nomorTelepon() int {
+func NomorTelepon() int {
 	noHP := 8622314
 	fmt.Println("Nomor Telepon (0251) \n", noHP)
 	return noHP
