@@ -4,7 +4,6 @@ package portalSMA
 
 import "fmt"
 
-// versi v1.0.0
 // fungsi
 func Perkenalan() {
 	fmt.Println("Selamat datang di Portal Madrasah Aliyah MA'HAD ALQUR'AN WAL HADIS (MA MAQDIS) Bogor \n")
@@ -17,16 +16,19 @@ func Pengguna(nama string) {
 	}
 }
 
-// fungsi sebagai parameter
-
-// versi v1.0.2
-// fungsi return value
-func Ekstrakulikuler(kegiatan [4]string) []string {
-	fmt.Println("kegiatan Ekstrakulikuler di MAQDIS adalah :")
+func Ekstrakulikuler(kegiatan [4]string) {
+	fmt.Println("kegiatan Ekstrakulikuler di MAQDIS adalah : ")
 	for _, ekskul := range kegiatan {
 		fmt.Println(ekskul)
-		return ekskul
+
 	}
+}
+
+// fungsi return value
+func nomorTelepon() int {
+	noHP := 8622314
+	fmt.Println("Nomor Telepon (0251) \n", noHP)
+	return noHP
 }
 
 // fungsi multiple return value
@@ -37,6 +39,8 @@ func VisiMisi() (string, string) {
 }
 
 // fungsi anonymous
+
+// fungsi sebagai parameter
 
 // struct
 // type ProfilSekolah struct {
