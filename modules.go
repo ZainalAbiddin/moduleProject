@@ -1,3 +1,5 @@
+//kasus : portal sekolah SMA sederhana
+
 package portalSMA
 
 import "fmt"
@@ -11,15 +13,28 @@ func Perkenalan() {
 // fungsi dengan parameter
 func Pengguna(nama string) {
 	if nama == "admin" {
-		fmt.Printf("Selamat datang %s di Portal Maqdis", nama)
+		fmt.Printf("Selamat datang %s di Portal Maqdis \n", nama)
 	}
 }
 
 // fungsi sebagai parameter
 
+// versi v1.0.2
 // fungsi return value
+func ekstrakulikuler(kegiatan [4]string) []string {
+	fmt.Println("kegiatan Ekstrakulikuler di MAQDIS adalah :")
+	for _, ekskul := range kegiatan {
+		fmt.Println(ekskul)
+		return ekskul
+	}
+}
 
 // fungsi multiple return value
+func VisiMisi() (string, string) {
+	visi := "Terwujudnya Madrasah Yang Berkualitas, Berprestasi Dan Berakhlaqul Karimah Berdasarkan Iman Dan Taqwa"
+	misi := "Menyelenggarakan pendidikan yang berkualitas dalam pencapaian prestasi akademik dan non-akademik,Mewujudkan peserta didik yang berprestasi, baik di bidang akademik maupun nonakademik seraya mampu mengembangkan semua potensinya sebagai bekal untuk melanjutkan ke pendidikan yang lebih tinggi dan atau hidup mandiri"
+	return visi, misi
+}
 
 // fungsi anonymous
 
