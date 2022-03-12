@@ -45,16 +45,7 @@ func Ekstrakulikuler(kegiatan [4]string) {
 	}
 }
 
-// fungsi anonymous
-
-// struct
-// type ProfilSekolah struct {
-// 	namaSekolah, alamatSekolah string
-// }
-
 // interface
-
-// anonymous struct
 
 // struct method
 func (n Nilaimurid) Nilai() string {
