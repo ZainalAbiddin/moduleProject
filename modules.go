@@ -57,3 +57,14 @@ func Ekstrakulikuler(kegiatan [4]string) {
 // anonymous struct
 
 // struct method
+func (n Nilaimurid) Nilai() string {
+	fmt.Println(n.Namamurid)
+	fmt.Println("kelas :", n.kelas)
+	for _, nilai := range n.Rataannilai {
+		fmt.Println("===================")
+		fmt.Println(nilai.fisika)
+		fmt.Println(nilai.biologi)
+		fmt.Println(nilai.kimia)
+	}
+	return "----------------------"
+}
