@@ -4,6 +4,7 @@ package portalSMA
 
 import "fmt"
 
+// struct
 type Nilaiipa struct {
 	fisika, biologi, kimia float64
 }
