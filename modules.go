@@ -9,26 +9,24 @@ func Perkenalan() {
 	fmt.Println("Selamat datang di Portal Madrasah Aliyah MA'HAD ALQUR'AN WAL HADIS (MA MAQDIS) Bogor \n")
 }
 
-// fungsi dengan parameter
-func Pengguna(nama string) {
-	if nama == "admin" {
-		fmt.Printf("Selamat datang %s di Portal Maqdis \n", nama)
-	}
-}
-
-func Ekstrakulikuler(kegiatan [4]string) {
-	fmt.Println("kegiatan Ekstrakulikuler di MAQDIS adalah : ")
-	for _, ekskul := range kegiatan {
-		fmt.Println(ekskul)
-
-	}
-}
-
 // fungsi return value
-func NomorTelepon() int {
-	noHP := 8622314
-	fmt.Println("Nomor Telepon (0251) \n", noHP)
-	return noHP
+func Ujinama(user string) bool {
+	aktif := false
+	if user == "admin" {
+		aktif = true
+	} else {
+		aktif = false
+	}
+	return aktif
+}
+
+// fungsi sebagai parameter
+func Verifikasi(user string, Uji func(string) bool) {
+	if Uji(user) {
+		fmt.Printf("Hallo %v , kamu memiliki akses untuk melihat nilai \n", user)
+	} else {
+		fmt.Printf("Hallo %v \n", user)
+	}
 }
 
 // fungsi multiple return value
@@ -38,9 +36,16 @@ func VisiMisi() (string, string) {
 	return visi, misi
 }
 
-// fungsi anonymous
+// fungsi dengan parameter
+func Ekstrakulikuler(kegiatan [4]string) {
+	fmt.Println("kegiatan Ekstrakulikuler di MAQDIS adalah : ")
+	for _, ekskul := range kegiatan {
+		fmt.Println(ekskul)
 
-// fungsi sebagai parameter
+	}
+}
+
+// fungsi anonymous
 
 // struct
 // type ProfilSekolah struct {
