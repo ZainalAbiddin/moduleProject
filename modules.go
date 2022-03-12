@@ -4,6 +4,16 @@ package portalSMA
 
 import "fmt"
 
+type Nilaiipa struct {
+	fisika, biologi, kimia float64
+}
+
+type Nilaimurid struct {
+	Namamurid   string
+	kelas       int
+	Rataannilai []Nilaiipa
+}
+
 // fungsi
 func Perkenalan() {
 	fmt.Println("Selamat datang di Portal Madrasah Aliyah MA'HAD ALQUR'AN WAL HADIS (MA MAQDIS) Bogor \n")
