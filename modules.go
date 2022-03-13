@@ -15,6 +15,25 @@ type Nilaimurid struct {
 	Rataannilai []Nilaiipa
 }
 
+// interface
+type Mediasocial interface {
+	Media() string
+}
+
+type Instagram struct {
+}
+
+func (i Instagram) Media() string {
+	return "instagram : @pesantrenmaqdis"
+}
+
+type Youtube struct {
+}
+
+func (y Youtube) Media() string {
+	return "youtube : Pesantren Maqdis"
+}
+
 // fungsi
 func Perkenalan() {
 	fmt.Println("Selamat datang di Portal Madrasah Aliyah MA'HAD ALQUR'AN WAL HADIS (MA MAQDIS) Bogor \n")
