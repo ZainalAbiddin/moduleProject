@@ -74,18 +74,3 @@ func Ekstrakulikuler(kegiatan [4]string) {
 
 	}
 }
-
-// interface
-
-// struct method
-// func (n Nilaimurid) Nilai() {
-// 	fmt.Println(n.Namamurid)
-// 	fmt.Println("kelas :", n.kelas)
-// 	for _, nilai := range n.Rataannilai {
-// 		fmt.Println("===================")
-// 		fmt.Println(nilai.fisika)
-// 		fmt.Println(nilai.biologi)
-// 		fmt.Println(nilai.kimia)
-// 	}
-
-// }
